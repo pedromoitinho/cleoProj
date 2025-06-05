@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           {/* Brand Section */}
           <div className="footer-section brand-section">
-            <h3 className="footer-brand">Boutique</h3>
+            <h3 className="footer-brand">CleoFit</h3>
             <p className="footer-description">
-              Discover beautiful and elegant items curated just for you. Experience luxury shopping with our exclusive collection.
+              Descubra roupas incriveis e elegantes para você.
             </p>
             <div className="social-links">
               <a href="#" className="social-link" aria-label="Facebook">
@@ -40,17 +40,6 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="footer-section">
-            <h4 className="footer-title">Quick Links</h4>
-            <ul className="footer-links">
-              <li><a href="#" className="footer-link">About Us</a></li>
-              <li><a href="#" className="footer-link">Products</a></li>
-              <li><a href="#" className="footer-link">Collections</a></li>
-              <li><a href="#" className="footer-link">Sale</a></li>
-              <li><a href="#" className="footer-link">Gift Cards</a></li>
-            </ul>
-          </div>
 
           {/* Customer Care */}
           <div className="footer-section">

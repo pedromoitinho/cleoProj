@@ -27,10 +27,10 @@ const Cart: React.FC<CartProps> = ({ onNavigateBack }) => {
     return (
       <div className="cart-container">
         <div className="empty-cart">
-          <h2>Your cart is empty</h2>
-          <p>Add some beautiful items to get started!</p>
+          <h2>Seu Carrinho está Vazio</h2>
+          <p>Adicione alguns itens para começar</p>
           <button onClick={onNavigateBack} className="continue-shopping-btn">
-            Continue Shopping
+            Continuar Navegando
           </button>
         </div>
       </div>

@@ -104,14 +104,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onNavigateBack
     dispatch({ type: "ADD_TO_CART", payload: product })
   }
 
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <span key={i} className={`star ${i < Math.floor(rating) ? "filled" : ""}`}>
-        ★
-      </span>
-    ))
-  }
-
   return (
     <div className="product-detail-container">
       <button onClick={onNavigateBack} className="back-link">

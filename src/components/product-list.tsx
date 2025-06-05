@@ -86,19 +86,11 @@ const ProductList: React.FC<ProductListProps> = ({ onNavigateToProduct }) => {
     dispatch({ type: "ADD_TO_CART", payload: product })
   }
 
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <span key={i} className={`star ${i < Math.floor(rating) ? "filled" : ""}`}>
-        ★
-      </span>
-    ))
-  }
-
   return (
     <div className="product-list-container">
       <div className="hero-section">
-        <h2>Discover Elegance</h2>
-        <p>Curated collection of beautiful accessories and jewelry</p>
+        <h2>Descubra Elegância</h2>
+        <p>Coleções Incriveís de Roupas</p>
       </div>
 
       <div className="products-grid">
@@ -108,7 +100,7 @@ const ProductList: React.FC<ProductListProps> = ({ onNavigateToProduct }) => {
               <img src={product.image || "/placeholder.svg"} alt={product.name} />
               <div className="product-overlay">
                 <button className="add-to-cart-btn" onClick={(e) => handleAddToCart(product, e)}>
-                  Add to Cart
+                  Adicionar ao Carrinho
                 </button>
               </div>
             </div>
