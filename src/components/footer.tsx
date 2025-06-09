@@ -43,13 +43,13 @@ const Footer: React.FC = () => {
 
           {/* Customer Care */}
           <div className="footer-section">
-            <h4 className="footer-title">Customer Care</h4>
+            <h4 className="footer-title">Informações</h4>
             <ul className="footer-links">
-              <li><a href="#" className="footer-link">Contact Us</a></li>
-              <li><a href="#" className="footer-link">Shipping Info</a></li>
-              <li><a href="#" className="footer-link">Returns</a></li>
-              <li><a href="#" className="footer-link">Size Guide</a></li>
-              <li><a href="#" className="footer-link">FAQ</a></li>
+              <li><a href="#" className="footer-link">Contato</a></li>
+              <li><a href="#" className="footer-link">Informações de Entrega</a></li>
+              <li><a href="#" className="footer-link">Reembolsos</a></li>
+              <li><a href="#" className="footer-link">Guia de Tamanho</a></li>
+              <li><a href="#" className="footer-link">QA</a></li>
             </ul>
           </div>
 
@@ -60,12 +60,11 @@ const Footer: React.FC = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} Boutique. All rights reserved.
+              © {currentYear} CleoFit. Todos os Direitos Reservados.
             </p>
             <div className="footer-bottom-links">
-              <a href="#" className="footer-bottom-link">Privacy Policy</a>
-              <a href="#" className="footer-bottom-link">Terms of Service</a>
-              <a href="#" className="footer-bottom-link">Cookies Policy</a>
+              <a href="#" className="footer-bottom-link">Política de Privacidade</a>
+              <a href="#" className="footer-bottom-link">Termos de Serviço</a>
             </div>
           </div>
         </div>

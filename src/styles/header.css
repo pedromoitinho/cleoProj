@@ -24,6 +24,7 @@
 	z-index: 1000;
 	box-shadow: 0px 5px 20px rgba(114, 114, 114, 0.2);
 	transition: var(--transition-smooth);
+	margin-bottom: 0;
 }
 
 
@@ -61,7 +62,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
+
 }
 
 
@@ -98,7 +99,7 @@
 	border: 1px solid rgba(255, 255, 255, 0.12);
 	cursor: pointer;
 	letter-spacing: -0.01em;
-	overflow: hidden;
+
 	backdrop-filter: blur(8px);
 }
 
@@ -109,10 +110,7 @@
 
 .nav-link:hover {
 	color: #ffffff;
-	background: rgba(255, 255, 255, 0.15);
-	border-color: rgba(255, 255, 255, 0.25);
-	transform: translateY(-2px);
-	box-shadow: var(--shadow-md);
+	border: 1px solid rgba(128, 0, 128, 0.2);
 }
 
 .cart-link {
@@ -126,32 +124,14 @@
 	justify-content: center;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	position: relative;
-	overflow: visible;
 	backdrop-filter: blur(8px);
 	transition: var(--transition-smooth);
 	box-shadow: var(--shadow-sm);
+	/* Ensure cart badge isn't clipped */
+	overflow: visible !important;
 }
 
-.cart-link::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: linear-gradient(135deg, rgba(245, 174, 208, 0.1), rgba(194, 166, 253, 0.1));
-	border-radius: 50%;
-	opacity: 0;
-	transition: var(--transition-smooth);
-}
 
-.cart-link:hover::after {
-	opacity: 1;
-}
-
-.cart-link:hover {
-	border-color: rgba(255, 255, 255, 0.5);
-	transform: translateY(-2px) scale(1.05);
-	box-shadow: var(--shadow-md);
-	background: rgba(255, 255, 255, 1);
-}
 
 .cart-badge {
 	background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
@@ -165,12 +145,12 @@
 	font-size: 0.75rem;
 	font-weight: 700;
 	position: absolute;
-	top: -6px;
-	right: -6px;
+	top: -8px;
+	right: -2px;
 	border: 2px solid rgba(255, 255, 255, 0.9);
 	box-shadow: var(--shadow-sm);
 	animation: pulse 2s infinite;
-	z-index: 2;
+	z-index: 10;
 }
 
 @keyframes pulse {
@@ -237,7 +217,7 @@
 
 @media (max-width: 480px) {
 	.header-container {
-		padding: 0 1rem;
+		padding: 0 10%;
 		gap: 1rem;
 	}
 

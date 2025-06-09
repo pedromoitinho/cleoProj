@@ -229,6 +229,7 @@ rt-container::before {
 	width: 140px;
 	height: 140px;
 	object-fit: cover;
+	object-position: 0% 10%;
 	border-radius: 20px;
 	border: 1px solid rgba(245, 174, 208, 0.1);
 	box-shadow: 0 8px 25px rgba(245, 174, 208, 0.1);

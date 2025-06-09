@@ -1,9 +1,9 @@
 "use client"
 
 import type React from "react"
+import logoImage from "../assets/logo.jpg"
 import { useCart } from "../context/cart-context"
 import "../styles/header.css"
-import logoImage from "../assets/logo.jpg"
 
 interface HeaderProps {
 	onNavigateToCart: () => void

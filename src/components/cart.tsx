@@ -40,9 +40,9 @@ const Cart: React.FC<CartProps> = ({ onNavigateBack }) => {
   return (
     <div className="cart-container">
       <div className="cart-header">
-        <h2>Shopping Cart</h2>
+        <h2>Carrinho</h2>
         <button className="clear-cart-btn" onClick={clearCart}>
-          Clear Cart
+          Limpar Carrinho
         </button>
       </div>
 
@@ -54,7 +54,7 @@ const Cart: React.FC<CartProps> = ({ onNavigateBack }) => {
 
               <div className="cart-item-details">
                 <h3 className="cart-item-name">{item.name}</h3>
-                <p className="cart-item-price">${item.price.toFixed(2)}</p>
+                <p className="cart-item-price">R${item.price.toFixed(2)}</p>
               </div>
 
               <div className="cart-item-controls">
@@ -69,37 +69,37 @@ const Cart: React.FC<CartProps> = ({ onNavigateBack }) => {
                 </div>
 
                 <button className="remove-btn" onClick={() => removeItem(item.id)}>
-                  Remove
+                  Remover
                 </button>
               </div>
 
-              <div className="cart-item-total">${(item.price * item.quantity).toFixed(2)}</div>
+              <div className="cart-item-total">R${(item.price * item.quantity).toFixed(2)}</div>
             </div>
           ))}
         </div>
 
         <div className="cart-summary">
           <div className="summary-card">
-            <h3>Order Summary</h3>
+            <h3>Valores:</h3>
             <div className="summary-line">
-              <span>Subtotal:</span>
-              <span>${state.total.toFixed(2)}</span>
+              <span>Total:</span>
+              <span>R${state.total.toFixed(2)}</span>
             </div>
             <div className="summary-line">
-              <span>Shipping:</span>
-              <span>Free</span>
+              <span>Frete:</span>
+              <span>Grátis</span>
             </div>
             <div className="summary-line total">
               <span>Total:</span>
-              <span>${state.total.toFixed(2)}</span>
+              <span>R${state.total.toFixed(2)}</span>
             </div>
-            <button className="checkout-btn">Proceed to Checkout</button>
+            <button className="checkout-btn">Prosseguir para a compra</button>
           </div>
         </div>
       </div>
 
       <button onClick={onNavigateBack} className="continue-shopping-link">
-        ← Continue Shopping
+        ← Continuar Comprando
       </button>
     </div>
   )
