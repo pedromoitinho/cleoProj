@@ -53,27 +53,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div className="footer-section newsletter-section">
-            <h4 className="footer-title">Stay Connected</h4>
-            <p className="newsletter-description">
-              Subscribe to our newsletter for exclusive offers and the latest updates.
-            </p>
-            <div className="newsletter-form">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="newsletter-input"
-                aria-label="Email address"
-              />
-              <button className="newsletter-btn" type="submit">
-                Subscribe
-              </button>
-            </div>
-            <p className="newsletter-privacy">
-              We respect your privacy. Unsubscribe at any time.
-            </p>
-          </div>
+      
         </div>
 
         {/* Footer Bottom */}

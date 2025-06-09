@@ -42,8 +42,9 @@
 }
 
 .footer-content {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1.5fr;
+	display: flex;
+	justify-content: center;
+	margin-right: 50px;
 	gap: 3rem;
 	padding: 4rem 0 3rem;
 	position: relative;

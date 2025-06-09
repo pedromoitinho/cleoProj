@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 body {
@@ -48,6 +49,18 @@ button {
 	outline: none;
 	font-family: inherit;
 	background: transparent;
+}
+
+/* Smooth scrolling support */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Ensure smooth scrolling works in all browsers */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
 /* Responsive breakpoints */
