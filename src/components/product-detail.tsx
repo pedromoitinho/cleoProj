@@ -1,9 +1,9 @@
 "use client"
 
 import type React from "react"
-import KitRosa from "../assets/KitRosa.jpeg"
-import KitRosaClaro from "../assets/KitRosaClaro.jpeg"
-import KitVerde from "../assets/KitVerde.jpeg"
+import KitRosa from "../assets/KitRosa.webp"
+import KitRosaClaro from "../assets/KitRosaClaro.webp"
+import KitVerde from "../assets/KitVerde.webp"
 import { useCart, type Product } from "../context/cart-context"
 import "../styles/product-detail.css"
 
@@ -57,9 +57,9 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onNavigateBack
   if (!product) {
     return (
       <div className="product-not-found">
-        <h2>Product not found</h2>
+        <h2>Produto não Encontrado</h2>
         <button onClick={onNavigateBack} className="back-link">
-          ← Back to Products
+          ← Voltar aos Produtos
         </button>
       </div>
     )
@@ -72,7 +72,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onNavigateBack
   return (
     <div className="product-detail-container">
       <button onClick={onNavigateBack} className="back-link">
-        ← Back to Products
+        ← Voltar aos Produtos
       </button>
 
       <div className="product-detail">

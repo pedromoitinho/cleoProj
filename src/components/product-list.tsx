@@ -1,9 +1,9 @@
 "use client"
 
 import type React from "react"
-import KitRosa from "../assets/KitRosa.jpeg"
-import KitRosaClaro from "../assets/KitRosaClaro.jpeg"
-import KitVerde from "../assets/KitVerde.jpeg"
+import KitRosa from "../assets/KitRosa.webp"
+import KitRosaClaro from "../assets/KitRosaClaro.webp"
+import KitVerde from "../assets/KitVerde.webp"
 import { useCart, type Product } from "../context/cart-context"
 import "../styles/product-list.css"
 

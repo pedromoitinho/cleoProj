@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import logoImage from "../assets/logo.jpg"
+import logoImage from "../assets/logo.webp"
 import { useCart } from "../context/cart-context"
 import "../styles/header.css"
 
